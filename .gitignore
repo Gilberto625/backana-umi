@@ -1,8 +1,8 @@
 # Dependencias
 node_modules/
 
-# Variables de entorno (CRITICO - contiene credenciales)
-.env
+# Variables de entorno (NOTA: .env se sube para trabajo en equipo - repo debe ser PRIVADO)
+# .env
 .env.local
 .env.production
 .env.test
