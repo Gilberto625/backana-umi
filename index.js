@@ -16,7 +16,7 @@ app.use(express.json());
 
 // Configuración de sesión para Passport
 app.use(session({
-  secret: process.env.JWT_SECRET || 'session_secret_cambiar',
+  secret: process.env.SESSION_SECRET || process.env.JWT_SECRET || 'session_secret_cambiar',
   resave: false,
   saveUninitialized: false,
   cookie: { secure: false } // En producción cambiar a true con HTTPS
